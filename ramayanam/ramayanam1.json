@@ -1,5 +1,5 @@
 {
-"custom": {"es": {"name": "English Summary"}},
+"custom": {"es": {"name": "English Summary", "lang": "en"}},
 "chapters": [
 {"name": "1.1", "number": "1.1"},
 {"name": "1.2", "number": "1.2"},
