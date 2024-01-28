@@ -1,6 +1,11 @@
 {
 "title": "महाभारतम्",
-"custom": {"md": {"name": "Manmatha Nath Dutt", "lang": "en"}},
+"custom": {
+"md": {
+"name": "Manmatha Nath Dutt",
+"lang": "en"
+}
+},
 "chapters": [
 {
 "name": "1.1",
@@ -59094,7 +59099,8 @@
 "c": "2.11",
 "n": "55",
 "i": 7608,
-"v": "स विजित्य महीं सर्वां सशैलवनकाननाम् । आजहार महाराज राजसूयं महाक्रतुम् ।।"
+"v": "स विजित्य महीं सर्वां सशैलवनकाननाम् । आजहार महाराज राजसूयं महाक्रतुम् ।।",
+"md": "He defeated all the neighbouring potentates and chief tribes and thus accomplished all that was necessary for the king (Yudhishthira) to perform the great Rajasuya sacrifice."
 },
 {
 "c": "2.11",
