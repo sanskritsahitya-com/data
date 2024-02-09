@@ -1,5 +1,5 @@
 {
-"custom": {"es": {"name": "English Summary", "lang": "en", "order": 2}, "anv": {"name": "अन्वयः", "lang": "sa", "markdown": false, "order": 1}},
+"custom": { "anv": {"name": "अन्वयः", "lang": "sa", "markdown": false, "order": 1}, "es": {"name": "English Summary", "lang": "en", "order": 3}, "md": {"name": "Manmatha Nath Dutt", "lang": "en", "order": 2}},
 "chapters": [
 {"name": "1.1", "number": "1.1"},
 {"name": "1.2", "number": "1.2"},
