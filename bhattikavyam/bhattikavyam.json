@@ -1,6 +1,6 @@
 {
 "title": "भट्टिकाव्यम् (रावणवधः)",
-"custom": {"et": {"name": "English Translation (Karandikars)", "lang": "en"}},
+"custom": {"et": {"name": "English Translation (Karandikars)", "lang": "en", "showInline": true}},
 "chapters": [
 {"number": "1", "name": "प्रथमः सर्गः"},
 {"number": "2", "name": "द्वितीयः सर्गः"},

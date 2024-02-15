@@ -1,5 +1,5 @@
 {
-"custom": {"es": {"name": "English Summary", "lang": "en"}},
+"custom": {"es": {"name": "English Summary", "lang": "en", "showInline": true}},
 "data": [
 {"c": "1", "t": "धृतराष्ट्र उवाच ।"},
 {"c": "1", "n": "1", "i": 1, "v": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत संजय ॥", "ch": {"n": "अनुष्टुप्", "s": [[["ध", "g"], ["र्म", "g"], ["क्षे", "g"], ["त्रे", "g"], ["कु", "l"], ["रु", "g"], ["क्षे", "g"], ["त्रे", "g"]], [["स", "l"], ["म", "l"], ["वे", "g"], ["ता", "g"], ["यु", "l"], ["यु", "g"], ["त्स", "l"], ["वः", "g"]], [["मा", "g"], ["म", "l"], ["काः", "g"], ["पा", "g"], ["ण्ड", "l"], ["वा", "g"], ["श्चै", "g"], ["व", "l"]], [["कि", "l"], ["म", "l"], ["कु", "g"], ["र्व", "l"], ["त", "l"], ["सं", "g"], ["ज", "l"], ["य", "l"]]]}, "es": "Dhrtarastra said O Sanjaya ! What did my men and the sons of Pandu do in the Kuruksetra, the field of righteousness, where the entire warring class has assembled ?orO Sanjaya ! What did the selfish intentions and the intentions born of wisdom do in the human body which is the field-of-duties, the repository of the senseorgans and in which all the murderous ones (passions and asceticism etc.) are confronting [each other]."},
