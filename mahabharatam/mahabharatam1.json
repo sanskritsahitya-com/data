@@ -1,6 +1,27 @@
 {
 "title": "महाभारतम्",
 "custom": {"md": {"name": "M N Dutt", "lang": "en", "showInline": true}},
+"terms" : {"bookSg": "पर्व", "bookPl": "पर्वाणि"},
+"books": [
+    {"number": "1", "name": "आदिपर्व"},
+    {"number": "2", "name": "सभापर्व"},
+    {"number": "3", "name": "अरयण्कपर्व"},
+    {"number": "4", "name": "विराटपर्व"},
+    {"number": "5", "name": "उद्योगपर्व"},
+    {"number": "6", "name": "भीष्मपर्व"},
+    {"number": "7", "name": "द्रोणपर्व"},
+    {"number": "8", "name": "कर्णपर्व"},
+    {"number": "9", "name": "शल्यपर्व"},
+    {"number": "10", "name": "सौप्तिकपर्व"},
+    {"number": "11", "name": "स्त्रीपर्व"},
+    {"number": "12", "name": "शांतिपर्व"},
+    {"number": "13", "name": "अनुशासनपर्व"},
+    {"number": "14", "name": "अश्वमेधिकापर्व"},
+    {"number": "15", "name": "आश्रम्वासिकापर्व"},
+    {"number": "16", "name": "मौसुलपर्व"},
+    {"number": "17", "name": "महाप्रस्थानिकपर्व"},
+    {"number": "18", "name": "स्वर्गारोहणपर्व"}
+],
 "chapters": [
 {"number": "1.1"},
 {"number": "1.2"},
