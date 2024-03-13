@@ -1,14 +1,14 @@
 {
 "custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": false, "order": 1}, "es": {"name": "Summary", "lang": "en", "order": 3}, "md": {"name": "M N Dutt", "lang": "en", "order": 2, "showInline": true}},
-"terms" : {"bookSg": "काण्डः", "bookPl": "काण्डाः"},
+"terms" : {"bookSg": "काण्डम्", "bookPl": "काण्डानि"},
 "books": [
-{"number": "1", "name": "बालकाण्डः"},
-{"number": "2", "name": "अयोध्याकाण्डः"},
-{"number": "3", "name": "अरण्यकाण्डः"},
-{"number": "4", "name": "किष्किन्धाकाण्डः"},
-{"number": "5", "name": "सुन्दरकाण्डः"},
-{"number": "6", "name": "युद्धकाण्डः"},
-{"number": "7", "name": "उत्तरकाण्डः"}],
+{"number": "1", "name": "बालकाण्डम्"},
+{"number": "2", "name": "अयोध्याकाण्डम्"},
+{"number": "3", "name": "अरण्यकाण्डम्"},
+{"number": "4", "name": "किष्किन्धाकाण्डम्"},
+{"number": "5", "name": "सुन्दरकाण्डम्"},
+{"number": "6", "name": "युद्धकाण्डम्"},
+{"number": "7", "name": "उत्तरकाण्डम्"}],
 "chapters": [
 {"number": "1.1"},
 {"number": "1.2"},
