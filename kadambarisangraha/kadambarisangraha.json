@@ -1,6 +1,6 @@
 {
 "title": "कादम्बरीसंग्रहः",
-"terms" : {"bookSg": "", "bookPl": "", "chapterSg": "भागः", "chapterPl": "भागाः"},
+"terms" : {"bookSg": "खण्डः", "bookPl": "खण्डाः", "chapterSg": "भागः", "chapterPl": "भागाः"},
 "books": [
 {"number": "1", "name": "कथामुखम्"},
 {"number": "2", "name": "तारापीडः"},
