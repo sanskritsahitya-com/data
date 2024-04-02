@@ -1,5 +1,6 @@
 {
 "title": "ऋतुसंहारम्",
+"custom": {"am": {"name": "ऋतुसमुच्चयटीका (अमरकीर्तिसूरिः)", "lang": "sa", "markdown": true}, "mr": {"name": "चन्द्रिकाटीका (मणिरामः)", "lang": "sa", "markdown": true}},
 "chapters": [
 {"number": "1", "name": "प्रथमः सर्गः"},
 {"number": "2", "name": "द्वितीयः सर्गः"},
