@@ -53,6 +53,11 @@ The structure of a `Shloka` object is:
     // A Shloka object should have only one of |v| and |t| keys.
     // A text entry doesn't have the "n" or "i" keys present.
     "t": "धृतराष्ट्र उवाच ।"
+
+    // [String] Speaker. This is used in plays to annotate the speaker of this particular text.
+    // Using this makes it easier to show the speaker in the UI and allows searching for dialogues
+    // based on speakers.
+    "sp": "शकुन्तला"
 }
 ```
 
