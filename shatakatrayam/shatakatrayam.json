@@ -1,6 +1,6 @@
 {
 "title": "शतकत्रयम्",
-"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "English Summary", "lang": "en", "order": 2, "aiGenerated": true}},
+"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "English Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}},
 "chapters": [
 {"number": "1", "name": "नीतिशतकम्"},
 {"number": "2", "name": "शृंगारशतकम्"},
