@@ -1,6 +1,6 @@
 {
 "title": "अभिज्ञानशाकुन्तलम्",
-"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "English Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}},
+"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}},
 "terms": {"chapterSg": "अङ्कः", "chapterPl": "अङ्काः"},
 "chapters": [
 {"number": "1", "name": "प्रथमोऽङ्कः"},

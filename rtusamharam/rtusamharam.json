@@ -1,6 +1,6 @@
 {
 "title": "ऋतुसंहारम्",
-"custom": {"am": {"name": "ऋतुसमुच्चयटीका (अमरकीर्तिसूरिः)", "lang": "sa", "markdown": true, "order": 3}, "mr": {"name": "चन्द्रिकाटीका (मणिरामः)", "lang": "sa", "markdown": true, "order": 4}, "anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "aiGenerated": true, "order": 1}, "es": {"name": "English Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}},
+"custom": {"am": {"name": "ऋतुसमुच्चयटीका (अमरकीर्तिसूरिः)", "lang": "sa", "markdown": true, "order": 3}, "mr": {"name": "चन्द्रिकाटीका (मणिरामः)", "lang": "sa", "markdown": true, "order": 4}, "anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "aiGenerated": true, "order": 1}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}},
 "chapters": [
 {"number": "1", "name": "प्रथमः सर्गः"},
 {"number": "2", "name": "द्वितीयः सर्गः"},
