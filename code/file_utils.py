@@ -13,12 +13,14 @@ def load_text(dirname, filename=None):
     base_dir = get_base_dir()
 
     if filename:
-        return convert_to_dot_dict(json.load(open(f'{base_dir}/{dirname}/{filename}.json')))
+        return convert_to_dot_dict(
+            json.load(open(f"{base_dir}/{dirname}/{filename}.json"))
+        )
     final_data = None
-    for filename in sorted(os.listdir(f'{base_dir}/{dirname}')):
+    for filename in sorted(os.listdir(f"{base_dir}/{dirname}")):
         if not filename.endswith("json"):
-            continue            
-        data = convert_to_dot_dict(json.load(open(f'{base_dir}/{dirname}/{filename}')))
+            continue
+        data = convert_to_dot_dict(json.load(open(f"{base_dir}/{dirname}/{filename}")))
         if not final_data:
             final_data = data
         else:
@@ -28,4 +30,4 @@ def load_text(dirname, filename=None):
 
 def write_text(data, name):
     base_dir = get_base_dir()
-    smart_json_dump(data, f'{base_dir}/{name}/{name}.json')
+    smart_json_dump(data, f"{base_dir}/{name}/{name}.json")
