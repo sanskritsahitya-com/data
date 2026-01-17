@@ -18,6 +18,36 @@ def check_and_fix_file(file_path, base_dir):
             original_content = f.read()
 
         data = json.loads(original_content)
+
+        # Check for duplicate verse numbers
+        if isinstance(data, dict) and "data" in data and isinstance(data["data"], list):
+            seen_verses = set()
+            duplicates = []
+            for item in data["data"]:
+                if not isinstance(item, dict):
+                    continue
+                n = item.get("n")
+                if n is None:
+                    continue
+                c = item.get("c")
+
+                if c:
+                    verse_id = f"{c}.{n}"
+                else:
+                    verse_id = str(n)
+
+                if verse_id in seen_verses:
+                    duplicates.append(verse_id)
+                else:
+                    seen_verses.add(verse_id)
+
+            if duplicates:
+                display_dupes = duplicates[:5]
+                msg = f"Duplicate verses: {', '.join(display_dupes)}"
+                if len(duplicates) > 5:
+                    msg += f" ... and {len(duplicates) - 5} more"
+                raise ValueError(msg)
+
         expected_content = smart_json_string(data)
 
         if original_content != expected_content:
@@ -64,8 +94,8 @@ def lint_json_files(data_dir, target_files=None):
     else:
         # Recursive walk as before
         for root, dirs, files in os.walk(data_dir):
-            if "code" in dirs:
-                dirs.remove("code")
+            # Filter out hidden directories and 'code'
+            dirs[:] = [d for d in dirs if not d.startswith(".") and d != "code"]
 
             for file in sorted(files):
                 if file.endswith(".json"):
