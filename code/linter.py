@@ -42,9 +42,9 @@ def check_and_fix_file(file_path, base_dir):
                     seen_verses.add(verse_id)
 
             if duplicates:
-                display_dupes = duplicates[:5]
+                display_dupes = duplicates[:10]
                 msg = f"Duplicate verses: {', '.join(display_dupes)}"
-                if len(duplicates) > 5:
+                if len(duplicates) > 10:
                     msg += f" ... and {len(duplicates) - 5} more"
                 raise ValueError(msg)
 
