@@ -1,6 +1,6 @@
 {
 "title": "नीलकण्ठविजयचम्पूः",
-"custom": {"sc": {"name": "विस्तारः", "lang": "sa", "markdown": false, "order": 1}},
+"custom": {"es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}, "sc": {"name": "विस्तारः", "lang": "sa", "markdown": false, "order": 1}},
 "terms": {"chapterSg": "आश्वासः", "chapterPl": "आश्वासाः"},
 "chapters": [
 {"number": "1", "name": "प्रथमाश्वासः", "subtitle": "Indra is cursed and the Daityas capture heaven.", "es": "The sage Durvāsas enters the celestial city and offers Indra a divine garland, only for the king’s elephant to trample it. This insult provokes a curse that strips the gods of their fortune. Seizing the moment, the Daitya armies launch a fierce assault, overwhelming the weakened deities. The gods flee as their capital falls. In the aftermath, the victors subvert sacred rites, forcing Vedic priests to recite hymns for demon kings, while ancient religious laws give way to the rule of chaos."},
