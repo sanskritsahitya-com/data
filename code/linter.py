@@ -2,6 +2,7 @@ import os
 import json
 import sys
 import argparse
+from distutils.util import strtobool
 from smart_json_dump import smart_json_string, smart_json_dump
 
 # ANSI Color Codes
@@ -11,7 +12,7 @@ RED = "\033[91m"
 RESET = "\033[0m"
 
 
-def check_and_fix_file(file_path, base_dir):
+def check_and_fix_file(file_path, base_dir, ignore_duplicate_verses=False):
     rel_path = os.path.relpath(file_path, base_dir)
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -41,7 +42,7 @@ def check_and_fix_file(file_path, base_dir):
                 else:
                     seen_verses.add(verse_id)
 
-            if duplicates:
+            if duplicates and not ignore_duplicate_verses:
                 display_dupes = duplicates[:10]
                 msg = f"Duplicate verses: {', '.join(display_dupes)}"
                 if len(duplicates) > 10:
@@ -64,7 +65,7 @@ def check_and_fix_file(file_path, base_dir):
         return "ERROR", (rel_path, str(e))
 
 
-def lint_json_files(data_dir, target_files=None):
+def lint_json_files(data_dir, target_files=None, ignore_duplicate_verses=False):
     changed_files = []
     error_files = []
     passed_files = []
@@ -84,7 +85,9 @@ def lint_json_files(data_dir, target_files=None):
                 continue
 
             total_files += 1
-            status, result = check_and_fix_file(file_path, data_dir)
+            status, result = check_and_fix_file(
+                file_path, data_dir, ignore_duplicate_verses=ignore_duplicate_verses
+            )
             if status == "FIXED":
                 changed_files.append(result)
             elif status == "OK":
@@ -101,7 +104,11 @@ def lint_json_files(data_dir, target_files=None):
                 if file.endswith(".json"):
                     total_files += 1
                     file_path = os.path.join(root, file)
-                    status, result = check_and_fix_file(file_path, data_dir)
+                    status, result = check_and_fix_file(
+                        file_path,
+                        data_dir,
+                        ignore_duplicate_verses=ignore_duplicate_verses,
+                    )
                     if status == "FIXED":
                         changed_files.append(result)
                     elif status == "OK":
@@ -133,10 +140,25 @@ if __name__ == "__main__":
         nargs="*",
         help="Specific JSON files to lint. If omitted, all files in data/ are linted.",
     )
+    parser.add_argument(
+        "--ignore-duplicate-verses",
+        action="store_true",
+        default=False,
+        help="Skip the duplicate verse number check.",
+    )
     args = parser.parse_args()
 
     # The script is in data/code/linter.py, so data dir is one level up
     script_dir = os.path.dirname(os.path.abspath(__file__))
     base_dir = os.path.dirname(script_dir)
 
-    lint_json_files(base_dir, target_files=args.files if args.files else None)
+    # Allow the pre-commit hook (which cannot pass CLI flags) to set
+    # LINTER_IGNORE_DUPLICATE_VERSES=1 in the environment instead.
+    env_ignore = bool(strtobool(os.environ.get("LINTER_IGNORE_DUPLICATE_VERSES", "0")))
+    ignore_duplicate_verses = args.ignore_duplicate_verses or env_ignore
+
+    lint_json_files(
+        base_dir,
+        target_files=args.files if args.files else None,
+        ignore_duplicate_verses=ignore_duplicate_verses,
+    )
