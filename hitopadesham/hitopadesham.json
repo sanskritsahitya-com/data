@@ -1,6 +1,6 @@
 {
 "title": "हितोपदेशः",
-"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}, "hs": {"name": "सारांश", "lang": "sa", "order": 3, "aiGenerated": true, "showInline": true}},
+"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}, "hs": {"name": "सारांश", "lang": "hi", "order": 3, "aiGenerated": true, "showInline": true}},
 "chapters": [
 {"number": "0", "name": "कथामुखम्", "subtitle": "The value of education, human effort, and virtuous company."},
 {"number": "1", "name": "मित्रलाभः", "subtitle": "Animals build friendships to survive and overcome greed."},

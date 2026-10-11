@@ -1,6 +1,6 @@
 {
 "title": "शतकत्रयम्",
-"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}, "hs": {"name": "सारांश", "lang": "sa", "order": 3, "aiGenerated": true, "showInline": true}},
+"custom": {"anv": {"name": "अन्वयः", "lang": "sa", "markdown": true, "order": 1, "aiGenerated": true}, "es": {"name": "Summary", "lang": "en", "order": 2, "aiGenerated": true, "showInline": true}, "hs": {"name": "सारांश", "lang": "hi", "order": 3, "aiGenerated": true, "showInline": true}},
 "chapters": [
 {"number": "1", "name": "नीतिशतकम्", "subtitle": "Knowledge, human conduct, and the power of fate.", "es": "Offers ethical guidance on navigating the complexities of human life and society, categorizing wisdom into thematic sections, exploring the importance of education, the pitfalls of ego, the nature of fate, and the characteristics of virtuous leadership."},
 {"number": "2", "name": "शृंगारशतकम्", "subtitle": "Romantic attraction and the influence of feminine beauty.", "es": "Exploring the depths of human passion, this text reflects on the beauty of romantic attraction, the charms of feminine grace, and the inevitable cycle of pleasure and disenchantment."},
