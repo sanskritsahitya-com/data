@@ -58,6 +58,11 @@ The structure of a `Shloka` object is:
     // Using this makes it easier to show the speaker in the UI and allows searching for dialogues
     // based on speakers.
     "sp": "शकुन्तला"
+
+    // [String] Original. In plays, a line spoken in Prakrit (or any other non-Sanskrit language)
+    // keeps the original here, and its Sanskrit chāyā goes in |v| (verse) or |t| (prose) as usual,
+    // so |v| and |t| are always Sanskrit.
+    "og": "अज्जउत्त ! इदो इदो ।"
 }
 ```
 
