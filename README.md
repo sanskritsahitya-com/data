@@ -38,7 +38,14 @@ The structure of a `Shloka` object is:
     // For Kaavyas with books, this would include the book number.
     "c": "1",
 
-    // [String] Shloka number
+    // [String] Number. For a verse, the shloka number: digits with an optional letter
+    // suffix for verses inserted later ("13", "13a"); it never contains "p".
+    // For a text entry (see |t| below) that has its own page, "<verse>p<k>": the k-th
+    // text entry after verse <verse> in the same chapter ("12p3"), or "0p<k>" before the
+    // chapter's first verse. These ids are assigned once and never renumbered: an entry
+    // inserted later gets a letter suffix ("12p3a") and a deleted one leaves a gap.
+    // Texts whose text entries are only speaker lines, headings and colophons (e.g. the
+    // Mahabharata's "X उवाच") leave them without an n.
     "n": "1",
 
     // [DEPRECATED] [Integer] Index. This represents the overall index of this shloka / line
@@ -51,7 +58,8 @@ The structure of a `Shloka` object is:
     // [String] Text. Refers to non-shloka text such as 'धृतराष्ट्र उवाच ।' that is
     // meant to be interspersed with shlokas.
     // A Shloka object should have only one of |v| and |t| keys.
-    // A text entry doesn't have the "n" or "i" keys present.
+    // A text entry never has the "i" key; it has "n" only in the "<verse>p<k>" form
+    // described above.
     "t": "धृतराष्ट्र उवाच ।"
 
     // [String] Speaker. This is used in plays to annotate the speaker of this particular text.
